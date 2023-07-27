@@ -1,9 +1,7 @@
 <template>
   <div class="about-container">
-    <!-- Fondo semi-transparente -->
     <div class="about-background"></div>
 
-    <!-- Contenedor izquierdo -->
     <div class="about-content-left">
       <div class="profile-image">
         <img
@@ -102,8 +100,6 @@ export default {
 </script>
 
 <style scoped>
-/* Estilos del componente aquí */
-
 .about-container {
   height: 100vh;
   display: flex;
@@ -282,18 +278,17 @@ export default {
 }
 
 .info-item {
-  color: #f18a4b; /* Texto anaranjado */
+  color: #f18a4b;
   font-size: 20px;
   margin-bottom: 5px;
 }
 
 .label {
-  color: #fff; /* Texto blanco */
+  color: #fff;
   font-weight: bold;
   margin-right: 5px;
 }
 
-/* Estilos responsivos */
 @media screen and (max-width: 1280px) {
   .title {
     font-size: 28px;
@@ -315,13 +310,12 @@ export default {
 
 @media screen and (max-width: 720px) {
   .about-container {
-    flex-direction: column; /* Cambiamos el orden de los elementos, ahora el contenido izquierdo irá debajo del derecho */
+    flex-direction: column;
   }
   .about-content-left {
     order: 2;
   }
-  .description {
-  }
+
   .about-content-right {
     order: 1;
   }

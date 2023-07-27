@@ -51,14 +51,11 @@ export default {
   name: "AppHeader",
   setup() {
     const isWideScreen = ref(window.innerWidth > 1200);
-
-    // Agregar evento para verificar el ancho de la pantalla al cambiar el tamaño de la ventana
     window.addEventListener("resize", () => {
       isWideScreen.value = window.innerWidth > 1200;
     });
 
     function toggleMenu() {
-      // Alternar la visibilidad del menú cuando se hace clic en el ícono de hamburguesa
       isWideScreen.value = !isWideScreen.value;
     }
 
@@ -71,7 +68,6 @@ export default {
 </script>
 
 <style scoped>
-/* Estilos del header aquí */
 .navbar {
   background-color: #1f242a;
   padding: 10px;
@@ -95,14 +91,13 @@ export default {
   text-decoration: none;
   margin-left: 2rem;
   font-family: sans-serif;
-  font-size: 17px; /* Tamaño de fuente reducido para resoluciones más grandes */
+  font-size: 17px;
 }
 
 .nav-link:hover {
   color: #f18a4b;
 }
 
-/* Ícono de hamburguesa */
 .navbar-toggler {
   border: none;
   background: transparent;
@@ -112,10 +107,9 @@ export default {
   margin-left: 2rem;
 }
 
-/* Estilos responsivos */
 @media (max-width: 1200px) {
   .nav-link {
-    font-size: 0.9rem; /* Tamaño de fuente reducido para resoluciones medianas */
+    font-size: 0.9rem;
   }
 }
 
@@ -123,19 +117,19 @@ export default {
   .navbar-nav {
     flex-direction: column;
     align-items: flex-start;
-    display: none; /* Ocultar el menú cuando se muestra el ícono de hamburguesa */
+    display: none;
   }
 
   .navbar-toggler {
-    display: block; /* Mostrar el ícono de hamburguesa */
+    display: block;
   }
 
   .navbar-nav.show {
-    display: flex; /* Mostrar el menú cuando se hace clic en el ícono de hamburguesa */
+    display: flex;
   }
 
   .nav-link {
-    margin: 0.5rem 0; /* Ajusta el valor según el espaciado deseado */
+    margin: 0.5rem 0;
   }
 }
 </style>

@@ -1,9 +1,6 @@
 <template>
   <div class="inicio-container">
-    <!-- Fondo semi-transparente -->
     <div class="inicio-background"></div>
-
-    <!-- Contenedor izquierdo -->
     <div class="inicio-content-left">
       <div class="profile-text">
         <h1>Hola, soy</h1>
@@ -39,8 +36,6 @@
 
       <button class="download-button">Descargar hoja de vida</button>
     </div>
-
-    <!-- Contenedor derecho con la imagen -->
     <div class="inicio-content-right">
       <div class="profile-image">
         <img
@@ -59,25 +54,21 @@ export default {
 </script>
 
 <style scoped>
-/* Estilos del componente aquí */
 .inicio-icon {
-  color: #f18a4b; /* Color anaranjado */
-  /* opacity: 0.7; Transparencia del 70% */
+  color: #f18a4b;
   transition: opacity 0.3s;
 }
 .linkedin-icon {
-  margin-right: 10px; /* Separación entre los iconos */
+  margin-right: 10px;
 }
-
-/* Estilos para el icono de GitHub */
 .github-icon {
-  margin-left: 15; /* Separación entre los iconos */
+  margin-left: 15;
 }
 .inicio-icon:hover {
   opacity: 1;
 }
 .inicio-container {
-  height: 790px; /* Altura del contenedor */
+  height: 790px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -88,7 +79,7 @@ export default {
 .inicio-background {
   background-image: url("https://wallpapercave.com/wp/wp8778419.png");
   background-size: cover;
-  background-position: center; /* Centrar la imagen verticalmente */
+  background-position: center;
   position: absolute;
   top: 0;
   left: 0;
@@ -96,17 +87,17 @@ export default {
   height: 100%;
   z-index: -5;
   opacity: 0.7;
-  background-color: rgba(0, 0, 0, 0.5); /* Color semi-transparente */
+  background-color: rgba(0, 0, 0, 0.5);
 }
 
 .inicio-content-left {
-  width: 70%; /* Contenedor izquierdo ocupa el 70% */
+  width: 70%;
   color: #fff;
   height: 100%;
-  padding: 5%; /* Padding del 5% */
+  padding: 5%;
 }
 .inicio-content-right {
-  width: 30%; /* Contenedor izquierdo ocupa el 70% */
+  width: 30%;
   color: #fff;
   padding: 5%;
   height: 100%;
@@ -117,15 +108,15 @@ p {
 }
 
 .profile-image {
-  width: 200px; /* Ajusta el tamaño de la imagen a tu preferencia */
-  height: 200px; /* Ajusta el tamaño de la imagen a tu preferencia */
-  border-radius: 50%; /* Hace que la imagen tenga forma circular */
-  overflow: hidden; /* Evita que la imagen se desborde del círculo */
-  margin: 0 auto; /* Centra la imagen horizontalmente */
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin: 0 auto;
   align-items: center;
   display: flex;
-  align-items: center; /* Centra verticalmente la imagen */
-  justify-content: center; /* Centra horizontalmente la imagen */
+  align-items: center;
+  justify-content: center;
   animation: moveUpDown 3s infinite alternate;
 }
 @keyframes moveUpDown {
@@ -144,13 +135,13 @@ p {
 }
 
 .social-icon {
-  color: #f18a4b; /* Color anaranjado */
+  color: #f18a4b;
   font-size: 24px;
 }
 
 .download-button {
   margin-top: 30px;
-  background-color: #f18a4b; /* Color anaranjado */
+  background-color: #f18a4b;
   color: #fff;
   padding: 12px 20px;
   border: none;
@@ -159,10 +150,9 @@ p {
   cursor: pointer;
 }
 
-/* Estilos responsivos */
 @media (max-width: 1200px) {
   .nav-link {
-    font-size: 0.9rem; /* Tamaño de fuente reducido para resoluciones medianas */
+    font-size: 0.9rem;
   }
 }
 
@@ -170,19 +160,19 @@ p {
   .navbar-nav {
     flex-direction: column;
     align-items: flex-start;
-    display: none; /* Ocultar el menú cuando se muestra el ícono de hamburguesa */
+    display: none;
   }
 
   .navbar-toggler {
-    display: block; /* Mostrar el ícono de hamburguesa */
+    display: block;
   }
 
   .navbar-nav.show {
-    display: flex; /* Mostrar el menú cuando se hace clic en el ícono de hamburguesa */
+    display: flex;
   }
 
   .nav-link {
-    margin: 0.5rem 0; /* Ajusta el valor según el espaciado deseado */
+    margin: 0.5rem 0;
   }
   .inicio-container {
     flex-direction: column;
@@ -192,7 +182,7 @@ p {
   }
   .inicio-content-right {
     width: 100%;
-    margin-top: 20px; /* Separación entre los contenedores */
+    margin-top: 20px;
   }
 }
 @keyframes moveUpDown {
@@ -204,7 +194,6 @@ p {
   }
 }
 
-/* Estilos responsivos */
 @media (max-width: 720px) {
   .inicio-container {
     flex-direction: column;
@@ -214,10 +203,9 @@ p {
   }
   .inicio-content-right {
     width: 100%;
-    margin-top: 0px; /* Separación entre los contenedores */
+    margin-top: 0px;
   }
   .profile-image {
-    /* Eliminar la animación de arriba a abajo */
     animation: none;
   }
 }
