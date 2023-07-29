@@ -72,7 +72,7 @@ export default {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 20px;
+  padding: 100px 20px 0;
   position: relative;
 }
 
@@ -90,17 +90,18 @@ export default {
   background-color: rgba(0, 0, 0, 0.5);
 }
 
+.inicio-content-left,
+.inicio-content-right {
+  color: #fff;
+  padding: 5%;
+  height: 100%;
+}
 .inicio-content-left {
   width: 70%;
-  color: #fff;
-  height: 100%;
-  padding: 5%;
 }
 .inicio-content-right {
   width: 30%;
-  color: #fff;
-  padding: 5%;
-  height: 100%;
+  margin-top: 20px;
 }
 p {
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
@@ -157,6 +158,9 @@ p {
 }
 
 @media (max-width: 720px) {
+  .inicio-content-right {
+    display: none;
+  }
   .navbar-nav {
     flex-direction: column;
     align-items: flex-start;
@@ -177,41 +181,13 @@ p {
   .inicio-container {
     flex-direction: column;
   }
-  .inicio-content-left {
-    width: 100%;
-  }
+  .inicio-content-left,
   .inicio-content-right {
     width: 100%;
-    margin-top: 20px;
-  }
-}
-@keyframes moveUpDown {
-  0% {
-    transform: translateY(0%);
-  }
-  100% {
-    transform: translateY(20%);
-  }
-}
-
-@media (max-width: 720px) {
-  .inicio-container {
-    flex-direction: column;
-  }
-  .inicio-content-left {
-    width: 100%;
-  }
-  .inicio-content-right {
-    width: 100%;
-    margin-top: 0px;
+    margin-top: 0;
   }
   .profile-image {
     animation: none;
-  }
-}
-@media screen and (max-width: 390px) {
-  .inicio-content-right {
-    display: none;
   }
 }
 </style>

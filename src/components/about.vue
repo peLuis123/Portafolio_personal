@@ -80,10 +80,10 @@
       </div>
       <div class="info">
         <div class="info-item">
-          <span class="label">Email:</span> correo@correo.com
+          <span class="label">Email:</span> pedrorc2018@gmail.com
         </div>
         <div class="info-item">
-          <span class="label">Celular:</span> +51 999 999 999
+          <span class="label">Celular:</span> +51 958 104 634
         </div>
         <div class="info-item">
           <span class="label">Fecha de cumpleaños:</span> 21/21/1999
@@ -309,6 +309,18 @@ export default {
 }
 
 @media screen and (max-width: 720px) {
+  .title {
+    font-size: 25px;
+  }
+  .subtitle {
+    font-size: 17px;
+  }
+  .description {
+    font-size: 15px;
+  }
+  .hobbies-title {
+    font-size: 17px;
+  }
   .about-container {
     flex-direction: column;
   }
@@ -326,7 +338,7 @@ export default {
     padding: 0;
   }
 }
-@media screen and (max-width: 390px) {
+@media screen and (max-width: 420px) {
   .about-content-left {
     display: none;
   }
