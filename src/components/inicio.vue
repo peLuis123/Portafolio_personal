@@ -18,14 +18,16 @@
       </div>
 
       <div class="inicio-icons">
-        <a href="https://www.linkedin.com/" target="_blank"
+        <a
+          href="https://www.linkedin.com/in/pedro-calla-363b04151/"
+          target="_blank"
           ><font-awesome-icon
             :icon="['fab', 'linkedin']"
             class="inicio-icon linkedin-icon"
             size="2x"
           ></font-awesome-icon
         ></a>
-        <a href="https://github.com/" target="_blank"
+        <a href="https://github.com/peLuis123" target="_blank"
           ><font-awesome-icon
             :icon="['fab', 'github']"
             class="inicio-icon github-icon"

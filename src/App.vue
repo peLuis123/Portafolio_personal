@@ -6,6 +6,7 @@
     <AboutMe />
     <MiExperiencia />
     <MisSkills />
+    <portFolio />
     <ContactaMe />
   </div>
 </template>
@@ -16,6 +17,7 @@ import AppHeader1 from "./components/header1.vue";
 import MiExperiencia from "./components/experiencia.vue";
 import MisSkills from "./components/habilidades.vue";
 import ContactaMe from "./components/contacto.vue";
+import portFolio from "./components/portafolio.vue";
 
 export default {
   components: {
@@ -26,6 +28,7 @@ export default {
     MiExperiencia,
     MisSkills,
     ContactaMe,
+    portFolio,
   },
 };
 </script>

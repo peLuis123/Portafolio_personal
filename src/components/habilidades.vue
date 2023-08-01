@@ -6,12 +6,8 @@
         <p class="icon-name">Python</p>
       </div>
       <div class="icon-item">
-        <i class="fab fa-js"></i>
-        <p class="icon-name">JavaScript</p>
-      </div>
-      <div class="icon-item">
-        <i class="fab fa-php"></i>
-        <p class="icon-name">PHP</p>
+        <i class="fab fa-cuttlefish"></i>
+        <p class="icon-name">C#</p>
       </div>
       <div class="icon-item">
         <i class="fab fa-html5"></i>
@@ -20,6 +16,14 @@
       <div class="icon-item">
         <i class="fab fa-css3"></i>
         <p class="icon-name">CSS3</p>
+      </div>
+      <div class="icon-item">
+        <i class="fab fa-bootstrap"></i>
+        <p class="icon-name">Bootstrap</p>
+      </div>
+      <div class="icon-item">
+        <i class="fab fa-js"></i>
+        <p class="icon-name">JavaScript</p>
       </div>
       <div class="icon-item">
         <i class="fab fa-react"></i>
@@ -38,6 +42,10 @@
         <p class="icon-name">Laravel</p>
       </div>
       <div class="icon-item">
+        <i class="fab fa-php"></i>
+        <p class="icon-name">PHP</p>
+      </div>
+      <div class="icon-item">
         <i class="fas fa-database"></i>
         <p class="icon-name">MySQL</p>
       </div>
@@ -48,6 +56,10 @@
       <div class="icon-item">
         <i class="fas fa-fire"></i>
         <p class="icon-name">Firebase</p>
+      </div>
+      <div class="icon-item">
+        <i class="fab fa-envira"></i>
+        <p class="icon-name">MongoDB</p>
       </div>
       <div class="icon-item">
         <i class="fab fa-git"></i>
@@ -65,22 +77,10 @@
         <i class="fas fa-mobile-alt"></i>
         <p class="icon-name">AppHive</p>
       </div>
-      <div class="icon-item">
-        <i class="fab fa-cuttlefish"></i>
-        <p class="icon-name">C#</p>
-      </div>
 
-      <div class="icon-item">
-        <i class="fab fa-envira"></i>
-        <p class="icon-name">MongoDB</p>
-      </div>
       <div class="icon-item">
         <i class="fab fa-wordpress"></i>
         <p class="icon-name">WordPress</p>
-      </div>
-      <div class="icon-item">
-        <i class="fab fa-bootstrap"></i>
-        <p class="icon-name">Bootstrap</p>
       </div>
     </div>
   </div>
