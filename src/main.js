@@ -10,9 +10,10 @@ import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
 import "@fortawesome/fontawesome-svg-core/styles.css";
 
 import App from "./App.vue";
-// import router from "./router";
+import router from "./router/index.js";
 // import store from "./store";
 library.add(faLinkedin, faGithub, faCar);
 const app = createApp(App);
 app.component("font-awesome-icon", FontAwesomeIcon);
+app.use(router);
 app.mount("#app");

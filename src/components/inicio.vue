@@ -6,14 +6,15 @@
         <h1>Hola, soy</h1>
         <h2>Pedro Luis Ramos Calla</h2>
         <p>
-          Soy un programador backend jr con conocimientos en Node.js, Laravel y
-          PHP, con bases de datos como Firebase, MongoDB, MySQL y SQL Server.
-          Además, conozco frameworks de frontend como Vue.js, React y HTML, y he
-          trabajado con modelamiento de datos en Power BI y análisis, modelado y
-          entrenamiento de datos con Python e inteligencia artificial.
-          Últimamente, he estado aprendiendo desarrollo móvil con Apphive, pero
-          de todos los temas que he tocado, lo que más me apasiona es el
-          desarrollo backend.
+          Como Desarrollador Backend Jr., mi experiencia se fusiona en la
+          creación de bases sólidas para aplicaciones. Maestro de Node.js,
+          Laravel y PHP, orquesto servicios eficientes. Mi lenguaje son las
+          bases de datos: Firebase, MongoDB, MySQL y SQL Server son mi lienzo.
+          Con Vue.js, React y HTML, doy vida a interfaces cautivadoras. Mi mente
+          analítica modela datos en Power BI, desentraña secretos con Python y
+          se adentra en el mundo de la inteligencia artificial. En el horizonte,
+          desarrollo móvil con Apphive. Sin embargo, mi pasión ardiente se ancla
+          en el backend, donde la lógica fluye y las soluciones florecen.
         </p>
       </div>
 
@@ -21,29 +22,26 @@
         <a
           href="https://www.linkedin.com/in/pedro-calla-363b04151/"
           target="_blank"
-          ><font-awesome-icon
-            :icon="['fab', 'linkedin']"
-            class="inicio-icon linkedin-icon"
-            size="2x"
-          ></font-awesome-icon
-        ></a>
-        <a href="https://github.com/peLuis123" target="_blank"
-          ><font-awesome-icon
-            :icon="['fab', 'github']"
-            class="inicio-icon github-icon"
-            size="2x"
-          ></font-awesome-icon
-        ></a>
+          class="inicio-icon linkedin-icon"
+        >
+          <i class="fab fa-linkedin"></i>
+        </a>
+        <a
+          href="https://github.com/peLuis123"
+          target="_blank"
+          class="inicio-icon github-icon"
+        >
+          <i class="fab fa-github"></i>
+        </a>
       </div>
-
+      <!-- <a href="../assets/images/agua.JPEG" download>
+        <button class="download-button">Descargar hoja de vida</button>
+      </a> -->
       <button class="download-button">Descargar hoja de vida</button>
     </div>
     <div class="inicio-content-right">
       <div class="profile-image">
-        <img
-          src="https://media.licdn.com/dms/image/D4E03AQEyGicX-Fbf6Q/profile-displayphoto-shrink_200_200/0/1684232652966?e=1695859200&v=beta&t=ducQ4fP7Mrk-XLS__55OyLXSeENWharsSzQV0KrgHFE"
-          alt="Perfil"
-        />
+        <img src="../assets/images/perfil.jpg" alt="Perfil" />
       </div>
     </div>
   </div>
@@ -56,18 +54,28 @@ export default {
 </script>
 
 <style scoped>
+.inicio-icons {
+  display: flex;
+  gap: 20px;
+  margin-top: 20px;
+}
+
 .inicio-icon {
   color: #f18a4b;
-  transition: opacity 0.3s;
+  font-size: 32px;
+  transition: transform 0.3s;
 }
+
 .linkedin-icon {
-  margin-right: 10px;
+  margin-left: 20px;
 }
+
 .github-icon {
-  margin-left: 15;
+  margin-left: 20px;
 }
+
 .inicio-icon:hover {
-  opacity: 1;
+  transform: scale(1.1);
 }
 .inicio-container {
   height: 790px;
@@ -79,7 +87,7 @@ export default {
 }
 
 .inicio-background {
-  background-image: url("https://wallpapercave.com/wp/wp8778419.png");
+  background-image: url("../assets/images/portada.jpg");
   background-size: cover;
   background-position: center;
   position: absolute;
@@ -88,7 +96,7 @@ export default {
   width: 100%;
   height: 100%;
   z-index: -5;
-  opacity: 0.7;
+  opacity: 0.9;
   background-color: rgba(0, 0, 0, 0.5);
 }
 
@@ -108,6 +116,7 @@ export default {
 p {
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
+  font-size: 18px;
 }
 
 .profile-image {

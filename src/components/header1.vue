@@ -7,25 +7,34 @@
       <div class="header-right">
         <nav class="menu" :class="{ 'show-menu': showMenu }">
           <ul>
-            <li><a href="#">Inicio</a></li>
-            <li><a href="#">Sobre mi</a></li>
-            <li><a href="#">Experiencia laboral</a></li>
-
-            <li><a href="#">Habilidades</a></li>
-            <li><a href="#">Portafolio</a></li>
-            <li><a href="#">Contacto</a></li>
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#about">Sobre mi</a></li>
+            <li><a href="#experiencia">Experiencia laboral</a></li>
+            <li><a href="#habilidades">Habilidades</a></li>
+            <li><a href="#portafolio">Portafolio</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+            <!-- <li><router-link to="/">Inicio</router-link></li>
+            <li><router-link to="/about">Sobre mi</router-link></li>
+            <li>
+              <router-link to="/experiencialaboral"
+                >Experiencia laboral</router-link
+              >
+            </li>
+            <li><router-link to="/habilidades">Habilidades</router-link></li>
+            <li><router-link to="/portafolio">Portafolio</router-link></li>
+            <li><router-link to="/contacto">Contacto</router-link></li> -->
           </ul>
         </nav>
         <button class="hamburger-btn" @click="toggleMenu">&#9776;</button>
       </div>
     </header>
-    <!-- Resto de tu contenido aquí -->
   </div>
 </template>
 
 <script>
 export default {
   name: "AppHeader",
+
   data() {
     return {
       showMenu: false,
@@ -66,7 +75,8 @@ export default {
 
 .name {
   font-size: 28px;
-  color: white;
+  color: #f18a4b;
+  font-weight: bold;
   margin-right: 20px;
 }
 
@@ -80,6 +90,7 @@ export default {
   display: flex;
   margin: 0;
   padding: 0;
+  font-weight: bold;
 }
 
 .menu li {
@@ -87,6 +98,7 @@ export default {
 }
 
 .menu li a {
+  margin-right: 15px;
   color: white;
   text-decoration: none;
   transition: color 0.3s;

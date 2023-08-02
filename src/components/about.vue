@@ -5,7 +5,7 @@
     <div class="about-content-left">
       <div class="profile-image">
         <img
-          src="https://media.licdn.com/dms/image/D4E03AQEyGicX-Fbf6Q/profile-displayphoto-shrink_200_200/0/1684232652966?e=1695859200&v=beta&t=ducQ4fP7Mrk-XLS__55OyLXSeENWharsSzQV0KrgHFE"
+          src="../assets/images/perfil.jpg"
           alt="Perfil"
           class="img-perfil"
         />
@@ -17,10 +17,15 @@
       <h1 class="title">Acerca de <a class="title-link">Mi</a></h1>
       <h2 class="subtitle">Desarrollador Backend</h2>
       <p class="description">
-        Me gusta estar al día sobre los nuevos desarrollos tecnológicos. Además,
-        me veo como una persona abierta a aprender de los errores de
-        programación. Soy una persona abierta a la crítica porque creo que ese
-        es el mejor enfoque para mejorar.
+        Soy un individuo altamente adaptable y poseedor de una extraordinaria
+        capacidad para el aprendizaje rápido. Mi destreza en la asimilación de
+        nuevos conocimientos me permite mantenerme a la vanguardia en un entorno
+        tecnológico en constante evolución.<br />
+        Mi pasión por los desarrollos tecnológicos actuales y emergentes me
+        motiva a estar siempre al tanto de las últimas tendencias y avances, lo
+        que impulsa mi capacidad para generar soluciones innovadoras.<br />
+        Sobresalgo en el trabajo en equipo, aprovechando mi enfoque analítico
+        para abordar desafíos y encontrar soluciones efectivas.<br />
       </p>
 
       <h2 class="hobbies-title">Hobbies</h2>
@@ -31,7 +36,6 @@
             height="1.5em"
             viewBox="0 0 640 512"
           >
-            <!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
             <path
               d="M392.8 1.2c-17-4.9-34.7 5-39.6 22l-128 448c-4.9 17 5 34.7 22 39.6s34.7-5 39.6-22l128-448c4.9-17-5-34.7-22-39.6zm80.6 120.1c-12.5 12.5-12.5 32.8 0 45.3L562.7 256l-89.4 89.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l112-112c12.5-12.5 12.5-32.8 0-45.3l-112-112c-12.5-12.5-32.8-12.5-45.3 0zm-306.7 0c-12.5-12.5-32.8-12.5-45.3 0l-112 112c-12.5 12.5-12.5 32.8 0 45.3l112 112c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L77.3 256l89.4-89.4c12.5-12.5 12.5-32.8 0-45.3z"
             />
@@ -175,7 +179,7 @@ export default {
 
 .description {
   color: #fff;
-  font-size: 20px;
+  font-size: 18px;
   margin-bottom: 20px;
 }
 
@@ -341,6 +345,9 @@ export default {
 @media screen and (max-width: 420px) {
   .about-content-left {
     display: none;
+  }
+  .about-container {
+    height: 120vh;
   }
 }
 </style>
