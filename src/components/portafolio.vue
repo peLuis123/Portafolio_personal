@@ -303,8 +303,8 @@ h1 {
     display: none;
   }
   .proyecto-card {
-    width: 200px; /* Hacer que las tarjetas ocupen todo el ancho cuando el ancho sea de 720px o menos */
-    height: 200px; /* Ajustar automáticamente la altura según el contenido */
+    width: 200px;
+    height: 200px;
   }
 }
 </style>
