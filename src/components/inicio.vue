@@ -34,10 +34,16 @@
           <i class="fab fa-github"></i>
         </a>
       </div>
-      <!-- <a href="../assets/images/agua.JPEG" download>
+      <a
+        href="https://drive.google.com/file/d/1kuXyebs8jqV4wD6jv7VLOboyM38KYiWn/view?usp=sharing"
+        target="_blank"
+        download
+      >
         <button class="download-button">Descargar hoja de vida</button>
-      </a> -->
-      <button class="download-button">Descargar hoja de vida</button>
+      </a>
+      <!-- <button class="download-button" @click="abrirPDF">
+        Descargar hoja de vida
+      </button> -->
     </div>
     <div class="inicio-content-right">
       <div class="profile-image">
