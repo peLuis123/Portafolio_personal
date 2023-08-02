@@ -1,6 +1,5 @@
 const { defineConfig } = require("@vue/cli-service");
 module.exports = defineConfig({
-  publicPath:
-    process.env.NODE_ENV === "production" ? "/Portafolio_personal/" : "/",
+  publicPath: process.env.NODE_ENV === "production" ? "/PORTAFOLIO/" : "/",
   transpileDependencies: true,
 });
